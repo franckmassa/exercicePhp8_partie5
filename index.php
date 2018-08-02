@@ -15,17 +15,16 @@ $months [12] = 'décembre';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <title>Exercice8</title>
-</head>
-<body>
-  <p>
-    <?php
-    foreach($months as $element){
-      echo $element . '<br/>';
-    }
-    ?>
-  </p>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercice8</title>
+    </head>
+    <body>
+        <!--Création d'une boucle pour récupérer les données sous forme de liste-->
+        <ul>  
+            <?php foreach ($months as $element) { ?>
+                <li><?= $element ?></li>
+            <?php } ?>
+        </ul>
+    </body>
 </html>
